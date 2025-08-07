@@ -1,7 +1,15 @@
+let mapInstance = null;
+
 export function initMap() {
-  const map = L.map('map').setView([20.5937, 78.9629], 3);
+  mapInstance = L.map('map').setView([20.5937, 78.9629], 3);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
+  }).addTo(mapInstance);
+
+  return mapInstance;
+}
+
+export function getMapInstance() {
+  return mapInstance;
 }
