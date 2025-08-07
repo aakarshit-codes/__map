@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Central Park",
+    "category": "Park",
+    "lat": 40.785091,
+    "lng": -73.968285,
+    "description": "A large public park in New York City."
+  },
+  {
+    "id": 2,
+    "name": "Louvre Museum",
+    "category": "Museum",
+    "lat": 48.860611,
+    "lng": 2.337644,
+    "description": "The world's largest art museum in Paris."
+  },
+  {
+    "id": 3,
+    "name": "Tokyo Tower",
+    "category": "Landmark",
+    "lat": 35.658581,
+    "lng": 139.745438,
+    "description": "A famous landmark and observation tower in Tokyo."
+  },
+  {
+    "id": 4,
+    "name": "Bondi Beach",
+    "category": "Beach",
+    "lat": -33.891475,
+    "lng": 151.276684,
+    "description": "A popular beach and tourist destination in Sydney."
+  },
+  {
+    "id": 5,
+    "name": "Statue of Liberty",
+    "category": "Monument",
+    "lat": 40.689247,
+    "lng": -74.044502,
+    "description": "An iconic American symbol of freedom in New York."
+  },
+  {
+    "id": 6,
+    "name": "Great Wall of China",
+    "category": "Historical",
+    "lat": 40.431908,
+    "lng": 116.570374,
+    "description": "Ancient series of walls and fortifications in China."
+  },
+  {
+    "id": 7,
+    "name": "Eiffel Tower",
+    "category": "Landmark",
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "description": "The iconic iron tower located in Paris."
+  }
+]
