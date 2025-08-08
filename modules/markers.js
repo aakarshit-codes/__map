@@ -22,12 +22,14 @@ export function renderMarkers(locations) {
   locations.forEach(location => {
     const marker = L.marker([location.lat, location.lng]).addTo(map);
     marker.bindPopup(`
-      <div class="text-sm">
-        <h2 class="text-base font-semibold">${location.name}</h2>
-        <p class="text-gray-600">${location.description}</p>
-        <p class="mt-1 text-xs italic text-blue-500">${location.category}</p>
-      </div>
-      `);
+    <div class="p-2">
+      <h2 class="text-lg font-semibold text-gray-800">${location.name}</h2>
+      <p class="text-gray-600 mt-1">${location.description}</p>
+      <span class="inline-block mt-2 px-2 py-1 text-xs font-medium text-white bg-blue-500 rounded">
+        ${location.category}
+      </span>
+    </div>
+    `);
 
       activeMarkers.push(marker);
   });
