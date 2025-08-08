@@ -23,6 +23,23 @@
 </head>
 
 <body class="bg-white text-gray-900">
+  <div
+    class="absolute z-10 w-full p-4 flex flex-col md:flex-row gap-4 bg-white bg-opacity-90 shadow-md">
+    <input id="searchInput" type="text" placeholder="Search by name..."
+      class="w-full md:w-1/3 p-2 border border-gray-300 rounded" />
+
+    <select id="categorySelect"
+      class="w-full md:w-1/4 p-2 border border-gray-300 rounded">
+      <option value="">All Categories</option>
+      <option value="Park">Park</option>
+      <option value="Museum">Museum</option>
+      <option value="Landmark">Landmark</option>
+      <option value="Beach">Beach</option>
+      <option value="Monument">Monument</option>
+      <option value="Historical">Historical</option>
+    </select>
+  </div>
+  
   <div id="map" class="z-0"></div>
 
   <!-- Leaflet JS -->
