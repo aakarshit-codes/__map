@@ -3,6 +3,9 @@ import { getMapInstance } from "./map.js";
 let allLocations = [];
 let activeMarkers = [];
 
+/**
+ * Load location data from JSON and display markers
+*/
 export async function loadMarkers()  {
   try {
     const response = await fetch('./data/locations.json');
@@ -13,6 +16,10 @@ export async function loadMarkers()  {
   }
 }
 
+/**
+ * Render markers on the map from a location list
+ * @param {Array} locations 
+*/
 export function renderMarkers(locations) {
   const map = getMapInstance();
 
@@ -22,7 +29,7 @@ export function renderMarkers(locations) {
   locations.forEach(location => {
     const marker = L.marker([location.lat, location.lng]).addTo(map);
     marker.bindPopup(`
-    <div class="p-2">
+    <div class="p-2 fade-in">
       <h2 class="text-lg font-semibold text-gray-800">${location.name}</h2>
       <p class="text-gray-600 mt-1">${location.description}</p>
       <span class="inline-block mt-2 px-2 py-1 text-xs font-medium text-white bg-blue-500 rounded">
@@ -35,6 +42,9 @@ export function renderMarkers(locations) {
   });
 }
 
+/**
+ * Get all loaded location data
+*/
 export function getAllLocations() {
   return allLocations;
 }

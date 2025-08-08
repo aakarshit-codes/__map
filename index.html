@@ -19,6 +19,22 @@
       height: 100vh;
       width: 100%;
     }
+
+    .fade-in {
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -27,7 +43,7 @@
     class="absolute z-10 w-full p-4 flex flex-col md:flex-row gap-3 bg-white bg-opacity-90 shadow-lg backdrop-blur-sm">
     <input id="searchInput" type="text" placeholder="🔍 Search by name..."
       class="flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-  
+
     <select id="categorySelect"
       class="w-full md:w-60 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
       <option value="">All Categories</option>
@@ -39,7 +55,7 @@
       <option value="Historical">Historical</option>
     </select>
   </div>
-  
+
   <div id="map" class="z-0"></div>
 
   <!-- Leaflet JS -->

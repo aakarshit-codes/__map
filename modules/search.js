@@ -1,6 +1,9 @@
 import { getAllLocations, renderMarkers } from './markers.js';
 import { debounce } from './utils.js';
 
+/**
+ * Initialize search and category filter events
+*/
 export function initSearch() {
   const input = document.getElementById('searchInput');
   const select = document.getElementById('categorySelect');
